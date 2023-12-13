@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="calci.component.scss">
+<div id="main">
+  <div class="calculator shadow-lg">
+    <input type="text" [value]="display" class="calculator-screen z-depth-1" id=[display()] disabled />
+
+    <div class="calculator-keys">
+
+      <button type="button" class="operator btn btn-secondary" value="+" (click)="OptClicked('+')">+</button>
+      <button type="button" class="operator btn btn-secondary" value="-" (click)="OptClicked('-')">-</button>
+      <button type="button" class="operator btn btn-secondary" value="*" (click)="OptClicked('*')">&times;</button>
+      <button type="button" class="operator btn btn-secondary" value="/" (click)="OptClicked('/')">&divide;</button>
+      <button type="button" class="operator btn btn-secondary" value="1/x" (click)="byx()">1/x</button>
+      <button type="button" class="operator btn btn-secondary" value="x2" (click)="xsquare()">x<sup>2</sup></button>
+      <button type="button" class="operator btn btn-secondary" value="sqrt(2)" (click)="sqrt()">&radic;x</button>
+      <button type="button" class="operator btn btn-secondary" value="%" (click)="OptClick()">%</button>
+
+
+      <button type="button" value="7" class="btn btn-light waves-effect" (click)="NumClick('7')">7</button>
+      <button type="button" value="8" class="btn btn-light waves-effect" (click)="NumClick('8')">8</button>
+      <button type="button" value="9" class="btn btn-light waves-effect" (click)="NumClick('9')">9</button>
+
+
+      <button type="button" value="4" class="btn btn-light waves-effect" (click)="NumClick('4')">4</button>
+      <button type="button" value="5" class="btn btn-light waves-effect" (click)="NumClick('5')">5</button>
+      <button type="button" value="6" class="btn btn-light waves-effect" (click)="NumClick('6')">6</button>
+
+
+      <button type="button" value="1" class="btn btn-light waves-effect" (click)="NumClick('1')">1</button>
+      <button type="button" value="2" class="btn btn-light waves-effect" (click)="NumClick('2')">2</button>
+      <button type="button" value="3" class="btn btn-light waves-effect" (click)="NumClick('3')">3</button>
+
+
+      <button type="button" value="0" class="btn btn-light waves-effect" (click)="NumClick('0')">0</button>
+      <button type="button" class="decimal btn btn-secondary" value="." (click)="NumClick('.')">.</button>
+      <button type="button" class="all-clear btn btn-danger btn-sm" value="all-clear" (click)="clear()">AC</button>
+
+      <button type="button" class="equal-sign btn btn-light" value="=" (click)="Equals()">=</button>
+    </div>
+  </div>
+</div>
